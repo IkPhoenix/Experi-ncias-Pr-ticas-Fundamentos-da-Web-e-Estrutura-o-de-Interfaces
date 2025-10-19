@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title>Logo Casa Solidária</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0aa"/>
+      <stop offset="1" stop-color="#0a7"/>
+    </linearGradient>
+  </defs>
+  <rect rx="20" ry="20" width="96" height="96" fill="url(#g)"/>
+  <g fill="#fff">
+    <path d="M48 20l26 18v30a8 8 0 0 1-8 8H30a8 8 0 0 1-8-8V38z" opacity=".95"/>
+    <circle cx="48" cy="52" r="12"/>
+  </g>
+</svg>

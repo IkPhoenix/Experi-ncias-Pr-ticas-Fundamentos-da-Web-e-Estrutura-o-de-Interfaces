@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Solidária — Projetos</title>
+  <meta name="description" content="Explore nossos projetos sociais, metas e oportunidades de voluntariado e doação.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo da Casa Solidária" width="48" height="48">
+        <span class="brand-text">Casa Solidária</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <nav aria-label="Trilha de navegação" class="breadcrumb">
+      <ol>
+        <li><a href="index.html">Início</a></li>
+        <li aria-current="page">Projetos</li>
+      </ol>
+    </nav>
+
+    <section aria-labelledby="lista-projetos">
+      <h1 id="lista-projetos">Projetos sociais</h1>
+
+      <article class="card">
+        <figure>
+          <img loading="lazy" src="assets/img/projeto-educacao.svg" width="640" height="360" alt="Ilustração de aula comunitária">
+          <figcaption>Projeto Educação Viva</figcaption>
+        </figure>
+        <div class="card-body">
+          <h2>Educação Viva</h2>
+          <p>Reforço escolar e alfabetização de jovens e adultos.</p>
+          <p><strong>Meta:</strong> atender 500 alunos em 2025 • <strong>Impacto:</strong> 78% de avanço em letramento.</p>
+          <p class="actions">
+            <a class="btn" href="cadastro.html#voluntariado">Quero ser voluntário(a)</a>
+            <a class="btn btn-ghost" href="cadastro.html#doacao">Quero doar</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img loading="lazy" src="assets/img/projeto-renda.svg" width="640" height="360" alt="Ilustração de oficina de artesanato">
+          <figcaption>Projeto Renda & Oficinas</figcaption>
+        </figure>
+        <div class="card-body">
+          <h2>Renda & Oficinas</h2>
+          <p>Capacitação em artesanato e economia solidária para mulheres.</p>
+          <p><strong>Meta:</strong> 200 novas empreendedoras • <strong>Impacto:</strong> aumento de 22% na renda média.</p>
+          <p class="actions">
+            <a class="btn" href="cadastro.html#voluntariado">Quero ser voluntário(a)</a>
+            <a class="btn btn-ghost" href="cadastro.html#doacao">Quero doar</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img loading="lazy" src="assets/img/projeto-cultura.svg" width="640" height="360" alt="Ilustração de apresentação cultural">
+          <figcaption>Projeto Cultura Viva</figcaption>
+        </figure>
+        <div class="card-body">
+          <h2>Cultura Viva</h2>
+          <p>Atividades culturais e esportivas para crianças e adolescentes.</p>
+          <p><strong>Meta:</strong> 300 vagas gratuitas • <strong>Impacto:</strong> 65% de melhoria em convívio social.</p>
+          <p class="actions">
+            <a class="btn" href="cadastro.html#voluntariado">Quero ser voluntário(a)</a>
+            <a class="btn btn-ghost" href="cadastro.html#doacao">Quero doar</a>
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano-atual">2025</span> Casa Solidária</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

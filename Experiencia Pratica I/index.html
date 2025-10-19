@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Solidária — Início</title>
+  <meta name="description" content="Plataforma para ONGs: conheça nossa missão, projetos e como fazer parte.">
+  <meta name="author" content="Casa Solidária">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preload" as="image" href="assets/img/hero.svg">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html" aria-label="Página inicial Casa Solidária">
+        <img src="assets/img/logo.svg" alt="Logo da Casa Solidária" width="48" height="48">
+        <span class="brand-text">Casa Solidária</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container" role="main">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero-text">
+        <h1 id="titulo-hero">Missão, visão e valores</h1>
+        <p>Promover inclusão e impacto social por meio de projetos de educação, cultura e cidadania.</p>
+        <p class="sr-only">Imagem ilustrativa de voluntários em ação ao lado do texto da missão.</p>
+        <a class="btn" href="projetos.html">Conheça nossos projetos</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/img/hero.svg" alt="Ilustração de pessoas colaborando em um projeto social">
+      </figure>
+    </section>
+
+    <section aria-labelledby="historia">
+      <h2 id="historia">Nossa história & conquistas</h2>
+      <article>
+        <h3>De 2012 até hoje</h3>
+        <p>Mais de 25 mil pessoas atendidas em 12 comunidades, com ênfase em alfabetização e geração de renda.</p>
+      </article>
+      <article>
+        <h3>Transparência</h3>
+        <p>Acreditamos na transparência radical. Acesse nossos relatórios anuais e prestações de contas.</p>
+        <p><a class="link" href="#" aria-label="Abrir relatórios de transparência (em breve)">Relatórios de transparência</a></p>
+      </article>
+    </section>
+
+    <aside aria-labelledby="contatos">
+      <h2 id="contatos">Contato</h2>
+      <address>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@casasolidaria.org">contato@casasolidaria.org</a></p>
+        <p><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p><strong>Endereço:</strong> Rua Esperança, 123 — São Paulo/SP</p>
+      </address>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram da Casa Solidária">Instagram</a></li>
+        <li><a href="#" aria-label="LinkedIn da Casa Solidária">LinkedIn</a></li>
+        <li><a href="#" aria-label="YouTube da Casa Solidária">YouTube</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano-atual">2025</span> Casa Solidária • <a class="link" href="cadastro.html">Seja voluntário(a) ou doador(a)</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza ano no footer sem quebrar validação
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
