@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Sementes do Amanhã — Projetos</title>
+  <meta name="description" content="Iniciativas sociais e como apoiar com voluntariado ou doações.">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo do Instituto Sementes do Amanhã" width="48" height="48">
+        <span class="brand-text">Instituto Sementes do Amanhã</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
+      <label for="nav-toggle" class="hamburger" aria-controls="menu" aria-expanded="false">☰ Menu</label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="index.html">Início</a>
+            <ul class="submenu" aria-label="Sobre">
+              <li><a href="index.html#historia">História</a></li>
+              <li><a href="index.html#contatos">Contato</a></li>
+            </ul>
+          </li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li class="dropdown">
+            <a href="cadastro.html">Participar</a>
+            <ul class="submenu" aria-label="Inscrições">
+              <li><a href="cadastro.html#voluntariado">Voluntariado</a></li>
+              <li><a href="cadastro.html#doacao">Doações</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <nav aria-label="Trilha de navegação" class="breadcrumb">
+      <ol>
+        <li><a href="index.html">Início</a></li>
+        <li aria-current="page">Projetos</li>
+      </ol>
+    </nav>
+
+    <h1 class="mb-3">Projetos sociais</h1>
+
+    <article class="card">
+      <img src="assets/img/projeto-educacao.svg" alt="Ilustração sala de aula comunitária">
+      <div class="card-body">
+        <h2>Trilha Tech Jovem</h2>
+        <div class="badges">
+          <span class="badge">Educação</span><span class="badge">Tecnologia</span><span class="badge">15–24</span>
+        </div>
+        <p class="mt-2">Formação em lógica, web e empregabilidade para jovens.</p>
+        <div class="flex gap-2 mt-2 wrap">
+          <a class="btn btn-primary" href="cadastro.html#voluntariado">Mentorar</a>
+          <a class="btn btn-ghost" href="cadastro.html#doacao">Doar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card mt-3">
+      <img src="assets/img/projeto-renda.svg" alt="Ilustração oficina de artesanato">
+      <div class="card-body">
+        <h2>Mulheres que Empreendem</h2>
+        <div class="badges">
+          <span class="badge">Renda</span><span class="badge">Empreendedorismo</span><span class="badge">Mulheres</span>
+        </div>
+        <p class="mt-2">Oficinas de produto, finanças e marketing.</p>
+        <div class="flex gap-2 mt-2 wrap">
+          <a class="btn btn-primary" href="cadastro.html#voluntariado">Dar uma oficina</a>
+          <a class="btn btn-ghost" href="cadastro.html#doacao">Doar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card mt-3">
+      <img src="assets/img/projeto-cultura.svg" alt="Ilustração apresentação cultural">
+      <div class="card-body">
+        <h2>Arte & Esporte</h2>
+        <div class="badges">
+          <span class="badge">Cultura</span><span class="badge">Esporte</span><span class="badge">Infância</span>
+        </div>
+        <p class="mt-2">Atividades extracurriculares com foco em convivência e bem-estar.</p>
+        <div class="flex gap-2 mt-2 wrap">
+          <a class="btn btn-primary" href="cadastro.html#voluntariado">Voluntariar</a>
+          <a class="btn btn-ghost" href="cadastro.html#doacao">Doar</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano-atual">2025</span> Instituto Sementes do Amanhã</p>
+    </div>
+  </footer>
+  <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

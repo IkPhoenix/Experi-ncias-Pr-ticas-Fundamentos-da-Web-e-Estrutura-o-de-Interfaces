@@ -1,0 +1,52 @@
+/* components.css: cards, buttons, forms, badges, alerts, toasts, modals */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+.card-body{padding:var(--sp-3)}
+.card + .card{margin-top:var(--sp-2)}
+
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.7rem 1rem; border-radius:var(--r-md); border:1px solid transparent; cursor:pointer; text-decoration:none; font-weight:600}
+.btn-primary{background:var(--brand-500); color:#fff}
+.btn-primary:hover{background:var(--brand-600)}
+.btn-ghost{background:transparent; color:var(--brand-600); border-color:var(--brand-200)}
+.btn-ghost:hover{background:var(--brand-50)}
+.btn[disabled], .btn:disabled{opacity:.55; cursor:not-allowed}
+
+.badges{display:flex; gap:.5rem; flex-wrap:wrap}
+.badge{display:inline-block; padding:.2rem .5rem; font-size:var(--fs-xs); border-radius:999px; background:var(--brand-50); color:var(--brand-700); border:1px solid var(--brand-100)}
+
+.form{display:grid; gap:var(--sp-2)}
+fieldset{border:1px solid var(--border); border-radius:var(--r-lg); padding:var(--sp-2)}
+legend{padding:0 .5rem; font-weight:700}
+.field{display:grid; gap:.35rem}
+label{font-weight:600}
+input, select, textarea{padding:.7rem; border:1px solid var(--border); border-radius:var(--r-md); font:inherit; background:#fff}
+input:focus, select:focus, textarea:focus{outline:3px solid color-mix(in oklab, var(--brand-500) 25%, white); border-color:var(--brand-400)}
+.help{color:var(--muted); font-size:var(--fs-xs)}
+input:user-invalid, select:user-invalid, textarea:user-invalid{border-color: var(--danger-500)}
+
+/* Alerts */
+.alert{padding:var(--sp-2); border-radius:var(--r-md); border:1px solid}
+.alert-info{background:color-mix(in srgb, var(--info-500) 10%, white); border-color:var(--info-500)}
+.alert-success{background:color-mix(in srgb, var(--success-500) 10%, white); border-color:var(--success-500)}
+.alert-warning{background:color-mix(in srgb, var(--warning-500) 12%, white); border-color:var(--warning-500)}
+.alert-danger{background:color-mix(in srgb, var(--danger-500) 10%, white); border-color:var(--danger-500)}
+
+/* Modal (CSS-only via :target) */
+.modal{position:fixed; inset:0; background:rgba(0,0,0,.4); display:none; align-items:center; justify-content:center; padding:var(--sp-3)}
+.modal:target{display:flex}
+.modal-dialog{background:#fff; border-radius:var(--r-lg); max-width:600px; width:96%; padding:var(--sp-3); box-shadow:var(--shadow)}
+
+/* Toast (positioned container) */
+.toasts{position:fixed; right:1rem; bottom:1rem; display:grid; gap:.5rem; z-index:40}
+.toast{background:#fff; border:1px solid var(--border); border-radius:var(--r-md); padding:.6rem .8rem; box-shadow:var(--shadow)}
+
+/* Breadcrumb */
+.breadcrumb ol{display:flex; list-style:none; gap:.5rem; padding:0; margin:0 0 var(--sp-2)}
+.breadcrumb li::after{content:"/"; margin-left:.5rem; color:var(--muted)}
+.breadcrumb li:last-child::after{content:""}

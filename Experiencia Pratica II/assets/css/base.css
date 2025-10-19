@@ -1,0 +1,19 @@
+/* base.css: resets, base elements */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+.container{width:var(--container); margin-inline:auto}
+img{max-width:100%; height:auto; display:block}
+a{color:var(--brand-600); text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:var(--fs-3xl); line-height:1.2; margin:.2em 0 .4em}
+h2{font-size:var(--fs-2xl); line-height:1.25; margin:.2em 0 .4em}
+h3{font-size:var(--fs-xl); line-height:1.3; margin:.2em 0 .4em}
+p{margin:.5em 0}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid color-mix(in oklab, var(--brand-500) 30%, white); outline-offset:2px}

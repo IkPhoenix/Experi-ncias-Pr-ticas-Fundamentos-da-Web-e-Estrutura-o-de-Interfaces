@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Sementes do Amanhã — Início</title>
+  <meta name="description" content="ONG que promove educação, cultura e geração de renda em comunidades.">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo do Instituto Sementes do Amanhã" width="48" height="48">
+        <span class="brand-text">Instituto Sementes do Amanhã</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
+      <label for="nav-toggle" class="hamburger" aria-controls="menu" aria-expanded="false">☰ Menu</label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="index.html">Início</a>
+            <ul class="submenu" aria-label="Sobre">
+              <li><a href="index.html#historia">História</a></li>
+              <li><a href="index.html#contatos">Contato</a></li>
+            </ul>
+          </li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li class="dropdown">
+            <a href="cadastro.html">Participar</a>
+            <ul class="submenu" aria-label="Inscrições">
+              <li><a href="cadastro.html#voluntariado">Voluntariado</a></li>
+              <li><a href="cadastro.html#doacao">Doações</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero">
+      <div>
+        <h1>Missão, visão e valores</h1>
+        <p class="mb-2"><strong>Missão:</strong> semear oportunidades por meio de educação integral, cultura e empreendedorismo.</p>
+        <div class="badges mb-3">
+          <span class="badge">Transparência</span>
+          <span class="badge">Equidade</span>
+          <span class="badge">Inovação social</span>
+        </div>
+        <a class="btn btn-primary" href="projetos.html">Conheça nossos projetos</a>
+        <a class="btn btn-ghost" href="cadastro.html">Participar</a>
+      </div>
+      <figure>
+        <img src="assets/img/hero.svg" alt="Ilustração de voluntários e educadores">
+      </figure>
+    </section>
+
+    <section id="historia" class="section">
+      <div class="grid">
+        <div class="col-8 md-col-12">
+          <h2>Nossa história</h2>
+          <p>Desde 2014, impactamos 18 mil pessoas com trilhas de tecnologia, empreendedorismo e atividades culturais.</p>
+          <div class="alert alert-info mt-2">Relatórios de transparência disponíveis em breve.</div>
+        </div>
+        <aside class="col-4 md-col-12">
+          <h3>Contato</h3>
+          <p><strong>E-mail:</strong> <a href="mailto:contato@sementesdoamanha.org.br">contato@sementesdoamanha.org.br</a></p>
+          <p><strong>Telefone:</strong> <a href="tel:+551140028922">(11) 4002-8922</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano-atual">2025</span> Instituto Sementes do Amanhã</p>
+    </div>
+  </footer>
+  <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

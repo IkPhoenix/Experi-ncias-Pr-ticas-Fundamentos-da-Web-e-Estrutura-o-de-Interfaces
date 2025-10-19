@@ -1,0 +1,78 @@
+/* layout.css: 12-col grid, header, responsive nav */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  gap: var(--sp-2);
+}
+/* Utilities to place items on columns */
+.col-12{grid-column: span 12}
+.col-8{grid-column: span 8}
+.col-6{grid-column: span 6}
+.col-4{grid-column: span 4}
+.col-3{grid-column: span 3}
+.col-2{grid-column: span 2}
+
+/* Breakpoint behavior */
+@media (max-width:1024px){
+  .lg-col-12{grid-column: span 12}
+  .lg-col-6{grid-column: span 6}
+  .lg-col-4{grid-column: span 4}
+}
+@media (max-width:900px){
+  .md-col-12{grid-column: span 12}
+  .md-col-6{grid-column: span 6}
+  .md-col-4{grid-column: span 4}
+}
+@media (max-width:720px){
+  .sm-col-12{grid-column: span 12}
+  .sm-col-6{grid-column: span 6}
+  .sm-col-4{grid-column: span 4}
+}
+@media (max-width:480px){
+  .xs-col-12{grid-column: span 12}
+  .xs-col-6{grid-column: span 6}
+  .xs-col-4{grid-column: span 4}
+}
+
+/* Header + Navigation */
+.site-header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--border); z-index:20}
+.header-wrap{display:flex; align-items:center; justify-content:space-between; gap:var(--sp-2); padding: .75rem 0}
+.brand{display:inline-flex; align-items:center; gap:.6rem; color:inherit}
+.brand-text{font-weight:700}
+
+.nav{display:flex; align-items:center; gap:var(--sp-2)}
+.nav ul{display:flex; gap:var(--sp-2); list-style:none; padding:0; margin:0}
+.nav a{display:inline-block; padding:.6rem .8rem; border-radius:var(--r-sm);}
+.nav a[aria-current="page"]{background:var(--brand-50)}
+
+/* Dropdown (sem JS, com :focus-within e hover) */
+.nav li{position:relative}
+.nav .dropdown > a::after{content:"▾"; margin-left:.35rem; font-size:.85em}
+.nav .submenu{
+  position:absolute; left:0; top:calc(100% + 4px);
+  min-width:220px; background:#fff; border:1px solid var(--border); border-radius:var(--r-md); box-shadow:var(--shadow);
+  padding:.4rem; display:none;
+}
+.nav li:hover .submenu, .nav li:focus-within .submenu{display:block}
+.submenu a{display:block; padding:.5rem .6rem; border-radius:var(--r-sm)}
+.submenu a:hover{background:var(--brand-50); text-decoration:none}
+
+/* Mobile hamburger (checkbox hack) */
+#nav-toggle{display:none}
+.hamburger{display:none; padding:.4rem .6rem; border:1px solid var(--border); border-radius:var(--r-sm); background:#fff}
+.hamburger:focus-visible{outline:3px solid color-mix(in oklab, var(--brand-500) 30%, white)}
+
+@media (max-width:900px){
+  .nav ul{display:none; position:absolute; right:1rem; top:64px; flex-direction:column; background:#fff; border:1px solid var(--border); border-radius:var(--r-md); box-shadow:var(--shadow); padding:.5rem; width:min(92vw, 320px)}
+  .hamburger{display:inline-flex; align-items:center; gap:.5rem}
+  #nav-toggle:checked ~ nav ul{display:flex}
+  .nav li{width:100%}
+  .nav .submenu{position:static; border:0; box-shadow:none; padding:0; display:none; margin-left:1rem}
+  .nav li:focus-within .submenu, .nav li:hover .submenu{display:block}
+}
+
+/* Hero and sections */
+.hero{display:grid; grid-template-columns: 7fr 5fr; align-items:center; gap:var(--sp-4); padding: var(--sp-5) 0}
+@media (max-width:900px){ .hero{grid-template-columns:1fr; padding: var(--sp-4) 0} }
+.section{padding: var(--sp-5) 0}
+.footer{border-top:1px solid var(--border); margin-top:var(--sp-5); padding: var(--sp-3) 0}

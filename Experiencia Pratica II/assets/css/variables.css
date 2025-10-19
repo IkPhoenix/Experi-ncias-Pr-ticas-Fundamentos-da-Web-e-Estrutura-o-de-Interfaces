@@ -1,0 +1,59 @@
+/* Design System — variables.css */
+:root{
+  /* Palette (8+ colors) */
+  --brand-50:#eef7f0;
+  --brand-100:#d9e6dc;
+  --brand-200:#bfe0c6;
+  --brand-300:#9dd4aa;
+  --brand-400:#6fbe82;
+  --brand-500:#2d8a34; /* primary */
+  --brand-600:#25752b;
+  --brand-700:#1f6a26;
+  --brand-800:#16511c;
+  --brand-900:#0f3b14;
+
+  --accent-500:#1ea7fd;
+  --warning-500:#f4a815;
+  --danger-500:#e53935;
+  --success-500:#22a06b;
+  --info-500:#3f51b5;
+
+  --bg:#ffffff;
+  --surface:#ffffff;
+  --surface-2:#f7faf8;
+  --text:#142015;
+  --muted:#4a5a4b;
+  --border:#e2e8e4;
+  --shadow: 0 6px 14px rgba(0,0,0,.08);
+
+  /* Typography scale (>=5 sizes) */
+  --fs-xxs: .75rem;   /*12*/
+  --fs-xs:  .8125rem; /*13*/
+  --fs-sm:  .875rem;  /*14*/
+  --fs-md:  1rem;     /*16*/
+  --fs-lg:  1.25rem;  /*20*/
+  --fs-xl:  1.5rem;   /*24*/
+  --fs-2xl: 2rem;     /*32*/
+  --fs-3xl: 2.5rem;   /*40*/
+
+  /* Spacing (8,16,24,32,48,64) */
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-5: 48px;
+  --sp-6: 64px;
+
+  /* Radius */
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+
+  /* Container widths */
+  --container: min(1100px, 92%);
+}
+
+/* Breakpoints (>=5) */
+@media (max-width: 1280px){ :root{ } } /* xl */
+@media (max-width: 1024px){ :root{ } } /* lg */
+@media (max-width: 900px){  :root{ } } /* md */
+@media (max-width: 720px){  :root{ } } /* sm */
+@media (max-width: 480px){  :root{ } } /* xs */

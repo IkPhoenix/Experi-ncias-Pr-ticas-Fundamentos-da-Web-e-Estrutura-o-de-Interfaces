@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title>Ilustração comunitária</title>
+  <desc>Pessoas cooperando em atividades sociais</desc>
+  <rect width="960" height="540" fill="#eef7f0"/>
+  <g fill="#2d8a34" opacity=".12">
+    <circle cx="120" cy="120" r="100"/><circle cx="360" cy="120" r="100"/><circle cx="600" cy="120" r="100"/><circle cx="840" cy="120" r="100"/>
+  </g>
+  <g fill="#2d8a34">
+    <rect x="140" y="260" width="200" height="140" rx="20"/>
+    <rect x="380" y="220" width="200" height="180" rx="20"/>
+    <rect x="620" y="280" width="200" height="120" rx="20"/>
+  </g>
+  <g fill="#1f6a26">
+    <circle cx="240" cy="240" r="36"/><circle cx="480" cy="200" r="36"/><circle cx="720" cy="260" r="36"/>
+  </g>
+</svg>
