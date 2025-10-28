@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Sementes do Amanhã</title>
+  <meta name="description" content="Aplicação web SPA file-friendly para ONG.">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
+      <a class="brand" href="#/">
+        <img src="assets/img/logo.svg" alt="Logo do Instituto Sementes do Amanhã" width="48" height="48">
+        <span class="brand-text">Instituto Sementes do Amanhã</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
+      <label for="nav-toggle" class="hamburger" aria-controls="menu" aria-expanded="false">☰ Menu</label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="#/">Início</a>
+            <ul class="submenu" aria-label="Sobre">
+              <li><a href="#/sobre">Sobre</a></li>
+              <li><a href="#/contato">Contato</a></li>
+            </ul>
+          </li>
+          <li><a href="#/projetos">Projetos</a></li>
+          <li class="dropdown">
+            <a href="#/cadastro">Participar</a>
+            <ul class="submenu" aria-label="Inscrições">
+              <li><a href="#/cadastro#voluntariado">Voluntariado</a></li>
+              <li><a href="#/cadastro#doacao">Doações</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main" aria-live="polite" aria-busy="false"></main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano-atual">2025</span> Instituto Sementes do Amanhã</p>
+    </div>
+  </footer>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/app.bundle.js"></script>
+  <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+</body>
+</html>
