@@ -21,4 +21,4 @@ Abra `index.html` diretamente no navegador.
 Disponível em: [https://ikphoenix.github.io/...](https://ikphoenix.github.io/)
 
 ## 🧠 Créditos
-Desenvolvido por [Seu Nome]
+Desenvolvido por Marcelo Augusto Degaspari
